@@ -1,8 +1,27 @@
 aid: 6-river-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/6-river-systems.png
 name: 6 River Systems
-description: 6 River Systems is a company surfaced as a portfolio company of menlo-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 6 River Systems is a warehouse fulfillment robotics company founded in 2015 in Waltham,
+  Massachusetts by former Kiva Systems leaders Rylan Hamilton, Jerome Dubois, and CTO Chris Cacioppo.
+  Its flagship product is "Chuck," a collaborative autonomous mobile robot (AMR) that works alongside
+  human associates to guide and accelerate order picking, replenishment, and sortation in ecommerce and
+  retail warehouses. The 6RS platform is a cloud-based execution layer that sits on top of a customer's
+  WMS/ERP and exposes a RESTful JSON/HTTPS integration API for order, task, and operational-data exchange
+  rather than a public self-serve developer portal. Shopify acquired 6 River Systems in 2019 for roughly
+  $450M; Ocado Group acquired it from Shopify in May 2023, and the technology now sits within Ocado
+  Intelligent Automation (Ocado Mobile Robot System / OMRS). Chuck has been deployed across 100-plus
+  warehouses for 70-plus customers. Added to the API Evangelist network as a menlo-ventures portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/6-river-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,8 +32,18 @@ x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+x-status-note: 6river.com is now a parked/lander domain (homepage redirects to empty /lander); 6 River
+  Systems technology has been absorbed into Ocado Intelligent Automation (OMRS). No live public developer
+  portal, API documentation, or OpenAPI surface was found during enrichment.
 tags:
 - Company
+- Robotics
+- Warehouse Automation
+- Fulfillment
+- Autonomous Mobile Robots
+- Supply Chain
+- Logistics
+- Ecommerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +51,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/6-river-systems-domain-security.yml
 - type: Website
   url: https://6river.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
